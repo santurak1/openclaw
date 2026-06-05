@@ -61,8 +61,3 @@ export {
 } from "./src/normalize-target.js";
 export { resolveWhatsAppGroupIntroHint } from "./src/runtime-api.js";
 export { testing as whatsappAccessControlTesting } from "./src/inbound/access-control.js";
-export {
-  startWhatsAppQaDriverSession,
-  type WhatsAppQaDriverObservedMessage,
-  type WhatsAppQaDriverSession,
-} from "./src/qa-driver.runtime.js";
