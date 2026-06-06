@@ -2,6 +2,12 @@
 
 Docs: https://docs.openclaw.ai
 
+## Unreleased
+
+### Fixes
+
+- iMessage: coalesce same-sender split-sends (`Dump <URL>`, caption + image) without adding latency to normal DMs. The monitor now classifies each DM — only short command-style lead-ins are briefly held, the payload row that follows merges in and flushes immediately, and everything else (prose, questions, lone URLs) dispatches instantly instead of waiting out the debounce window.
+
 ## 2026.6.2
 
 ### Highlights
